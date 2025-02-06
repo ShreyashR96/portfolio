@@ -171,7 +171,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
@@ -183,7 +183,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Glimpse</button>
           </li>
 
           <li class="navbar-item">
@@ -202,7 +202,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -249,7 +249,7 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cybersecurity Enthusiast</h4>
+                <h4 class="h4 service-item-title">Cybersecurity</h4>
 
                 <p class="service-item-text">
                   Diving deep into the world of cybersecurity, I am passionately building a strong foundation to protect systems and data. This journey involves understanding vulnerabilities, implementing secure practices, and staying ahead in the ever-evolving field of digital security.                </p>
@@ -297,94 +297,75 @@
           - Certificates
         -->
 
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Certificates</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/coep.svg" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Basics of Programming Logic (BOPL)</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    July-Aug 2023<br>
-                    Completed at COEP, this course focused on programming logic and problem-solving, mentored by Abhijeet Sir.
-                  </p>
-                </div>
-
+        <section class="certificates" id="certificates">
+          <h3 class="h3 certificates-title">Certificates</h3>
+          
+          <ul class="certificates-list">
+            <li class="certificate-item" onclick="window.location.href='certificate.html?id=cert-coep'">
+              <div class="certificate-icon">
+                <img src="./assets/images/COEP.png" alt="COEP" width="40">
+              </div>
+              <div class="certificate-content">
+                <h4>Basics of Programming Logic (BOPL)</h4>
+                <span class="certificate-date">July-Aug 2023</span>
+                <p>COEP | Mentor: Abhijeet Sir</p>
+              </div>
+              <div class="certificate-hover">
+                <ion-icon name="eye-outline"></ion-icon>
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="certificate-item" onclick="window.location.href='certificate.html?id=cert-npteldn'">
+              <div class="certificate-icon">
+                <img src="./assets/images/nptel.png" alt="Certificate" width="40">
+              </div>
+              <div class="certificate-content">
+                <h4>NPTEL: Demystifying Networking</h4>
+                <span class="certificate-date">Aug 2024</span>
+                <p>NPTEL</p>
+              </div>
+              <div class="certificate-hover">
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/nptel.svg" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>NPTEL: Demystifying Networking</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Gained a foundational understanding of networking concepts, protocols, and their practical applications.
-                  </p>
-                </div>
-
+                <ion-icon name="eye-outline"></ion-icon>
               </div>
             </li>
+            <li class="certificate-item">
+              <div class="certificate-icon">
+                <img src="./assets/images/google.png" alt="Certificate" width="40">
+              </div>
+              <div class="certificate-content">
+                <h4>Google Cybersecurity Professional Certificate</h4>
+                <span class="certificate-date">April 2024</span>
+                <p>Google & Coursera</p>
+              </div>
+              <div class="certificate-hover">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/google.svg" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Google Cybersecurity Professional Certificate</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Developed entry-level cybersecurity skills, including Python, Linux, SQL, SIEM tools, IDS, and risk mitigation techniques.
-                  </p>
-                </div>
-
+                <ion-icon name="eye-outline"></ion-icon>
               </div>
             </li>
+            <li class="certificate-item">
+              <div class="certificate-icon">
+                <img src="./assets/images/mkcl.png" alt="Certificate" width="40">
+              </div>
+              <div class="certificate-content">
+                <h4>Maharashtra State Certificate in Information Technology (MS-CIT)</h4>
+                <span class="certificate-date">May 2023</span>
+                <p>MKCL</p>
+              </div>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Mkcl.svg" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>MS-CIT</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    May 2023<br>
-                    Acquired essential computer literacy skills, covering fundamental IT concepts and applications.<br>
-                  </p>
-                </div>
-
+              <div class="certificate-hover">
+                <ion-icon name="eye-outline"></ion-icon>
               </div>
             </li>
-
+            <!-- Add  more certificate items with dummy data -->
           </ul>
-
         </section>
 
 
         <!--
-          - testimonials modal
+          -  DONT NOT REMOVE THIS SECTION
         -->
+
 
         <div class="modal-container" data-modal-container>
 
@@ -409,7 +390,7 @@
               <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
               <div data-modal-text>
                 <p>
-              eeeeeeeeeeeeee
+           
                 </p>
               </div>
 
@@ -486,57 +467,7 @@
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Dr.D.Y.Patil Pratishthan's College Of Engineering</h4>
-
-              <span>2023-Present</span>
-
-              <p class="timeline-text">
-                Pursuing B.Tech in Computer Science and Engineering(Data Science) from Dr.D.Y.Patil Pratishthan's College Of Engineering, Salokhenagar
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Dr.Kadam Gurukul Jeevan Vikas Prashala & Jr College , Indapur</h4>
-
-              <span>2021 - 2023</span>
-
-              <p class="timeline-text">
-                Completed my Higher Secondary Education In PCM Stream from Dr.Kadam Gurukul Jeevan Vikas Prashala & Jr College , Indapur
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">S.B.Patil Public School, Vangali</h4>
-
-              <span>2011 - 2021</span>
-
-              <p class="timeline-text">
-                Completed my Secondary Education from S.B.Patil Public School, Vangali
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
+        
 
         <section class="timeline">
 
@@ -576,7 +507,7 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Cybersecurity Team Member</h4>
+              <h4 class="h4 timeline-item-title">GDGC Cybersecurity Team Member</h4>
 
               <span>2023 - 2024</span>
 
@@ -589,67 +520,116 @@
           </ol>
 
         </section>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Dr.D.Y.Patil Pratishthan's College Of Engineering</h4>
+
+              <span>2023-Present</span>
+
+              <p class="timeline-text">
+                Pursuing B.Tech in Computer Science and Engineering(Data Science). 
+              </p>
+              <div class="timeline-marks">
+                <span class="percentage">CGPA(FY): 6.92</span>
+              </div>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Dr.Kadam Gurukul Jeevan Vikas Prashala & Jr College , Indapur</h4>
+
+              <span>2021 - 2023</span>
+
+              <p class="timeline-text">
+                Completed my Higher Secondary Education (11th to 12th) in PCM Stream, Computer Science as Bifocal.
+              </p>
+              <div class="timeline-marks">
+                <span class="percentage">Percentage(HSC): 68.67%</span>
+              </div>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">S.B.Patil Public School, Vangali</h4>
+
+              <span>2011 - 2021</span>
+
+              <p class="timeline-text">
+                Completed My Secondary Education (1st to 10th).
+              </p>
+              <div class="timeline-marks">
+                <span class="percentage">Percentage(SSC): 78.40%</span>
+              </div>
+
+            </li>
+
+          </ol>
+
+        </section>
 
         <section class="skill">
-
           <h3 class="h3 skills-title">My skills</h3>
 
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Cybersecurity</h5>
-                <data value="20">20%</data>
+          <div class="skills-container">
+            <!-- Cybersecurity Skills Box -->
+            <div class="skill-box">
+              <div class="skill-header">
+                <ion-icon name="shield-outline"></ion-icon>
+                <h4>Cybersecurity</h4>
               </div>
+              <ul class="skill-list">
+                <li> Computer Network</li>
+                <li>Security Tools</li>
+                <li>Vulnerability Assessment</li>
+              </ul>
+            </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 20%;"></div>
+            <!-- Development Skills Box -->
+            <div class="skill-box">
+              <div class="skill-header">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <h4>Development</h4>
               </div>
+              <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>GitHub</li>
+                <li>Web Development</li>
 
-            </li>
+              </ul>
+            </div>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">D</h5>
-                <data value="70">70%</data>
+            <!-- Other Skills Box -->
+            <div class="skill-box">
+              <div class="skill-header">
+                <ion-icon name="layers-outline"></ion-icon>
+                <h4>Other Skills</h4>
               </div>
+              <ul class="skill-list">
+                <li>AI Prompting</li>
+                <li>Graphic Design</li>
+                <li>Photography</li>
+                <li>Team Leadership</li>
+                <li>Event Management</li>
+              </ul>
+            </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Ai Prompating </h5>
-                <data value="40">40%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic Design</h5>
-                <data value="30">30%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
+          </div>
         </section>
 
       </article>
@@ -734,12 +714,12 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/newtab_hackertheme.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Extension</h3>
 
-                <p class="project-category">Design</p>
+                <p class="project-category">Development</p>
 
               </a>
             </li>
@@ -752,10 +732,10 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/readinghallentry.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Reading Hall Entry/Exit Record</h3>
 
                 <p class="project-category">Web development</p>
 
@@ -770,12 +750,12 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/timetaablegenerator.png" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Time Table Generator</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Development</p>
 
               </a>
             </li>
@@ -791,12 +771,13 @@
                   <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">Truth & Dare Telegram Bot</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Development</p>
 
               </a>
             </li>
+
 
             <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
@@ -902,188 +883,144 @@
         - #Glimpse
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="glimpse" data-page="glimpse">
 
         <header>
           <h2 class="h2 article-title">Glimpse</h2>
         </header>
 
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
+        <section class="glimpse-posts">
+          <ul class="glimpse-posts-list">
+          <li class="glimpse-post-item">
               <a href="https://www.google.com">
-
-                <figure class="blog-banner-box">
+                <figure class="glimpse-banner-box">
                   <img src="./assets/images/devfest_pune_2023.png" alt="Devfest Pune 2023" loading="lazy">
                 </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Event</p>
-
+                <div class="glimpse-content">
+                  <div class="glimpse-meta">
+                    <p class="glimpse-category">Event</p>
                     <span class="dot"></span>
-
                     <time datetime="2023-12-21">21 Dec 2023</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">GDG Devfest Pune 2023</h3>
-
-                  <p class="blog-text">
+                  <h3 class="h3 glimpse-item-title">GDG Devfest Pune 2023</h3>
+                  <p class="glimpse-text">
                     Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
                   </p>
-
                 </div>
-
               </a>
             </li>
-
-            <li class="blog-post-item">
+        
+            <li class="glimpse-post-item">
               <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/GDSC_WOW_Pune2024.png" alt="Best fonts every designer" loading="lazy">
+                <figure class="glimpse-banner-box">
+                  <img src="./assets/images/GDSC_WOW_Pune2024.png" alt="GDSC WOW Pune 2024" loading="lazy">
                 </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Event</p>
-
+                <div class="glimpse-content">
+                  <div class="glimpse-meta">
+                    <p class="glimpse-category">Event</p>
                     <span class="dot"></span>
-
-                    <time datetime="2024-04-06">April 06 , 2024</time>
+                    <time datetime="2024-04-06">April 06, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">GDSC WOW Pune 2024</h3>
-
-                  <p class="blog-text">
+                  <h3 class="h3 glimpse-item-title">GDSC WOW Pune 2024</h3>
+                  <p class="glimpse-text">
                     Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
                   </p>
-
                 </div>
-
               </a>
             </li>
-
-            <li class="blog-post-item">
+        
+            <li class="glimpse-post-item">
               <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="GDGC INFO SESSION (DYPCOE,Akurdi)" loading="lazy">
+                <figure class="glimpse-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="GDGC INFO SESSION (DYPCOE, Akurdi)" loading="lazy">
                 </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Event</p>
-
+                <div class="glimpse-content">
+                  <div class="glimpse-meta">
+                    <p class="glimpse-category">Event</p>
                     <span class="dot"></span>
-
                     <time datetime="2024-08-30">Sept 30, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">GDGC INFO SESSION (DYPCOE,Akurdi)</h3>
-
-                  <p class="blog-text">
+                  <h3 class="h3 glimpse-item-title">GDGC INFO SESSION (DYPCOE, Akurdi)</h3>
+                  <p class="glimpse-text">
                     Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
                   </p>
-
                 </div>
-
               </a>
             </li>
-
-            <li class="blog-post-item">
-              <a href="https://www.linkedin.com/posts/shreyashrakhunde96_devfestpune2024-gdgpune-wtm-activity-7270336434446761984-_h0J?utm_source=share&utm_medium=member_desktop" taget="_blank"> 
-
-                <figure class="blog-banner-box">
+        
+            <li class="glimpse-post-item">
+              <a href="https://www.linkedin.com/posts/shreyashrakhunde_devfestpune2024-gdgpune-wtm-activity-7270336434446761984-_h0J?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <figure class="glimpse-banner-box">
                   <img src="./assets/images/devfest_pune_2024.png" alt="Devfest Pune 2024" loading="lazy">
                 </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Event</p>
-
+                <div class="glimpse-content">
+                  <div class="glimpse-meta">
+                    <p class="glimpse-category">Event</p>
                     <span class="dot"></span>
-
                     <time datetime="2024-11-30">Nov 30, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">GDG Devfest Pune 2024</h3>
-
-                  <p class="blog-text">
+                  <h3 class="h3 glimpse-item-title">GDG Devfest Pune 2024</h3>
+                  <p class="glimpse-text">
                     Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
                   </p>
-
                 </div>
-
               </a>
             </li>
-
-            <li class="blog-post-item">
+        
+            <li class="glimpse-post-item">
               <a href="#">
-
-                <figure class="blog-banner-box">
-                 <img src="./assets/images/devfest_mumbai_2024.png" alt="GDG Devfest Mumbai 52024" loading="lazy">
+                <figure class="glimpse-banner-box">
+                  <img src="./assets/images/devfest_mumbai_2024.png" alt="GDG Devfest Mumbai 2024" loading="lazy">
                 </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Event</p>
-
+                <div class="glimpse-content">
+                  <div class="glimpse-meta">
+                    <p class="glimpse-category">Event</p>
                     <span class="dot"></span>
-
                     <time datetime="2024-12-14">Dec 14, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">GDG Devfest Mumbai 2024</h3>
-
-                  <p class="blog-text">
+                  <h3 class="h3 glimpse-item-title">GDG Devfest Mumbai 2024</h3>
+                  <p class="glimpse-text">
                     Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
-
                 </div>
-
               </a>
             </li>
-
-            <li class="blog-post-item">
+        
+            <li class="glimpse-post-item">
               <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/cybersec_conference.png" alt="Design digest #79" loading="lazy">
+                <figure class="glimpse-banner-box">
+                  <img src="./assets/images/cybersec_conference.png" alt="IdentityShield Summit' 25" loading="lazy">
                 </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Conference</p>
-
+                <div class="glimpse-content">
+                  <div class="glimpse-meta">
+                    <p class="glimpse-category">Conference</p>
                     <span class="dot"></span>
-
-                    <time datetime="2025-01-11">Jan 11&12 2025</time>
+                    <time datetime="2025-01-11">Jan 11 & 12, 2025</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">IdentityShield Summit' 25</h3>
-
-                  <p class="blog-text">
-                       Soon..
+                  <h3 class="h3 glimpse-item-title">IdentityShield Summit' 25</h3>
+                  <p class="glimpse-text">
+                    Soon..
                   </p>
-
                 </div>
-
               </a>
             </li>
-
           </ul>
-
         </section>
 
+        <section class="note-section">
+          <div class="note-container">
+            <h3 class="h3 note-title">Note</h3>
+            <p class="note-text">
+              If you'd like to attend such events and stay updated with the latest tech gatherings, join our community groups! You'll get notifications about upcoming events, workshops, and networking opportunities.
+            </p>
+            <div class="note-cta">
+              <a href="https://t.me/Linux_User96" class="cta-link" target="_blank">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <span>Join Our Community</span>
+              </a>
+            </div>
+          </div>
+        </section>
       </article>
 
 
@@ -1100,40 +1037,77 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47894.7100483144!2d75.02420072706447!3d18.124768841693484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc4792e22a61e83%3A0x305d2a423eef7769!2sIndapur%2C%20Maharashtra%20413106!5e1!3m2!1sen!2sin!4v1736100269112!5m2!1sen!2sin"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
+        <section class="download-section">
+          <h3 class="h3 download-title">Download Resume</h3>
+          <div class="download-box">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <div class="download-content">
+              <p>Get my detailed resume in PDF format</p>
+              <div class="download-btn-wrapper">
+                <a href="./assets/resume/ShreyashRakhunde_Resume.pdf" class="download-btn" download>
+                  <ion-icon name="download-outline"></ion-icon>
+                  <span>Download CV</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
-            <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="283dc2b6-8b71-4487-9979-ca265156fca1">
-        
-            <!-- Honeypot Spam Protection -->
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        
+     
+          <form class="form" data-form>
             <div class="input-wrapper">
-                <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
                 <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
         
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
         
-            <div class="form-actions">
-                <button class="form-btn" type="submit" disabled data-form-btn>
-                    <ion-icon name="paper-plane"></ion-icon>
-                    <span>Send Message</span>
-                </button>
-            </div>
+            <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+            </button>
         </form>
 
+        </section>
+
+       
+
+        <section class="contact-social">
+          <h3 class="h3 social-title">Connect With Me</h3>
+          
+          <div class="social-links-grid">
+            <a href="https://wa.me/+917796598338" class="social-link" target="_blank">
+              <div class="social-link-box">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>WhatsApp</span>
+              </div>
+            </a>
+
+            <a href="https://t.me/Linux_User96" class="social-link" target="_blank">
+              <div class="social-link-box">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Telegram</span>
+              </div>
+            </a>
+
+            <a href="https://instagram.com/shreyash.rakhunde" class="social-link" target="_blank">
+              <div class="social-link-box">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <span>Instagram</span>
+              </div>
+            </a>
+
+            <a href="https://snapchat.com/add/shreyashr96" class="social-link" target="_blank">
+              <div class="social-link-box">
+                <ion-icon name="logo-snapchat"></ion-icon>
+                <span>Snapchat</span>
+              </div>
+            </a>
+          </div>
         </section>
 
       </article>
@@ -1150,6 +1124,8 @@
   <!--
     - custom js link
   -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
   <script src="./assets/js/script.js"></script>
 
   <!--
@@ -1157,6 +1133,37 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+  // 404 Error Handler
+  window.addEventListener('load', function() {
+    // Check if the page exists
+    if (document.querySelector('.main-content').children.length === 0) {
+      document.querySelector('.main-content').innerHTML = `
+        <article class="error-page active">
+          <div class="error-container">
+            <img src="./assets/images/404golden.png" alt="404 Error" class="error-image">
+            <a href="/" class="form-btn" style="margin-top: 20px; width: auto; display: inline-flex;">
+              <span>Go Back Home</span>
+            </a>
+          </div>
+        </article>
+      `;
+    }
+  });
+
+  // Handle smooth scrolling to certificates section
+  window.addEventListener('load', function() {
+    if (window.location.hash === '#certificates') {
+      const certificatesSection = document.querySelector('.certificates');
+      if (certificatesSection) {
+        setTimeout(() => {
+          certificatesSection.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  });
+  </script>
 
 </body>
 
