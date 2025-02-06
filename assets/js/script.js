@@ -1,19 +1,82 @@
 'use strict';
 
+// Initialize EmailJS first
+emailjs.init("c4JbhVGGhFOugRIwZ");
 
+// Toast function
+function showToast(message, isError = false) {
+  const toast = document.createElement('div');
+  toast.className = `toast ${isError ? 'error' : 'success'}`;
+  toast.textContent = message;
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+    toast.classList.add('hiding');
+    setTimeout(() => {
+      toast.remove();
+    }, 300);
+  }, 3000);
+}
+
+// Contact form handling
+const form = document.querySelector("[data-form]");
+const formBtn = document.querySelector("[data-form-btn]");
+let isSubmitting = false;
+
+if (form) {
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    
+    if (isSubmitting) return;
+    
+    isSubmitting = true;
+    formBtn.disabled = true;
+    formBtn.innerHTML = 'Sending...';
+
+    try {
+      const formData = {
+        from_name: form.querySelector('[name="fullname"]').value,
+        from_email: form.querySelector('[name="email"]').value,
+        message: form.querySelector('[name="message"]').value
+      };
+
+      const response = await emailjs.send(
+        'service_0xnzih5',
+        'template_b9k6p9r',
+        formData
+      );
+
+      if (response.status === 200) {
+        showToast('Message sent successfully!');
+        form.reset();
+      } else {
+        throw new Error('Failed to send message');
+      }
+
+    } catch (error) {
+      console.error('Error:', error);
+      showToast('Failed to send message. Please try again.', true);
+    } finally {
+      isSubmitting = false;
+      formBtn.disabled = false;
+      formBtn.innerHTML = '<ion-icon name="paper-plane"></ion-icon><span>Send Message</span>';
+    }
+  });
+}
 
 // element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
+const elementToggleFunc = function (elem) { 
+  elem.classList.toggle("active"); 
+}
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
+sidebarBtn.addEventListener("click", function () { 
+  elementToggleFunc(sidebar); 
+});
 
 
 // testimonials variables
@@ -52,8 +115,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 // add click event to modal close button
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
-
-
 
 // custom select variables
 const select = document.querySelector("[data-select]");
@@ -113,12 +174,52 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
+// page navigation variables
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
 
+// Function to set active page
+function setActivePage(pageName) {
+  pages.forEach((page) => {
+    if (page.dataset.page === pageName) {
+      page.classList.add("active");
+      // Find and activate corresponding nav link
+      navigationLinks.forEach((link) => {
+        if (link.innerHTML.toLowerCase() === pageName) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+    } else {
+      page.classList.remove("active");
+    }
+  });
+}
 
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
+// Check localStorage on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const savedPage = localStorage.getItem("activePage");
+  if (savedPage) {
+    setActivePage(savedPage);
+  } else {
+    // Default to 'about' if no saved page
+    setActivePage("about");
+  }
+});
+
+// add event to all nav link
+navigationLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    const clickedPage = this.innerHTML.toLowerCase();
+    
+    // Save to localStorage
+    localStorage.setItem("activePage", clickedPage);
+    
+    setActivePage(clickedPage);
+    window.scrollTo(0, 0);
+  });
+});
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
@@ -129,30 +230,6 @@ for (let i = 0; i < formInputs.length; i++) {
       formBtn.removeAttribute("disabled");
     } else {
       formBtn.setAttribute("disabled", "");
-    }
-
-  });
-}
-
-
-
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
     }
 
   });
