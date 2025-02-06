@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Details - Shreyash Rakhunde</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/certificate.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <article class="certificate-detail active">
+      <header>
+        <div class="back-button" onclick="window.location.href='index.html#certificates'">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back to Portfolio</span>
+          </div>
+      </header>
+
+      <div class="certificate-sections">
+        <!-- COEP Certificate -->
+        <section id="cert-coep" class="cert-section">
+          <h2 class="h2 article-title">Basics of Programming Logic (BOPL)</h2>
+          <div class="certificate-content">
+            <img src="./assets/images/certificates/COEPBOPL 2023.jpg" alt="COEP Certificate">
+            <div class="cert-details">
+              <p class="cert-issuer">COEP (College of Engineering, Pune)</p>
+              <time class="cert-date">July-Aug 2023</time>
+              <p class="cert-description">
+                Completed comprehensive training in programming fundamentals, including logic building,
+                problem-solving techniques, and basic programming concepts under the guidance of 
+                Mentor Abhijeet Sir.
+              </p>
+              <a href="#verify-link" class="verify-btn" target="_blank">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <span>Verify Certificate</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Each certificate section -->
+        <section id="cert-npteldn" class="cert-section">
+          <h2 class="h2 article-title">NPTEL: Demystifying Networking</h2>
+          <div class="certificate-content">
+            <img src="./assets/images/certificates/NPTEL_DeNetwork.jpg" alt="Ethical Hacking Certificate">
+            <div class="cert-details">
+              <p class="cert-issuer">NPTEL</p>
+              <time class="cert-date">Aug 2024</time>
+              <p class="cert-description">
+                Completed comprehensive training in networking fundamentals, including
+
+                network security, vulnerability assessment, and penetration testing techniques.
+              </p>
+              <a href="#" class="form-btn verify-btn">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <span>Verify Certificate</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Add more certificate sections as needed -->
+      </div>
+    </article>
+  </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Show only the selected certificate
+    window.addEventListener('load', function() {
+      const certId = new URLSearchParams(window.location.search).get('id');
+      if (certId) {
+        document.querySelectorAll('.cert-section').forEach(section => {
+          section.style.display = 'none';
+        });
+        const selectedCert = document.getElementById(certId);
+        if (selectedCert) {
+          selectedCert.style.display = 'block';
+        }
+      }
+    });
+  </script>
+</body>
+</html> 
