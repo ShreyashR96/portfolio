@@ -1,0 +1,158 @@
+:root {
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  );
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right, 
+    hsl(45, 100%, 71%) 0%, 
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    to bottom right, 
+    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --white-2: hsl(0, 0%, 98%);
+  --light-gray: hsl(0, 0%, 84%);
+}
+
+body {
+  background: hsl(240, 2%, 12%);
+  color: var(--light-gray);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.certificate-detail {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--orange-yellow-crayola);
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: transform 0.25s ease;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+.back-button:hover {
+  transform: translateX(-5px);
+}
+
+.back-button:focus {
+  outline: none;
+}
+
+.back-button:focus-visible {
+  outline: 2px solid var(--orange-yellow-crayola);
+  outline-offset: 2px;
+}
+
+.cert-section {
+  background: var(--bg-gradient-onyx);
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+}
+
+.cert-section::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.article-title {
+  color: var(--white-2);
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.certificate-content {
+  display: grid;
+  gap: 30px;
+}
+
+.certificate-content img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.cert-details {
+  color: var(--light-gray);
+}
+
+.cert-issuer {
+  color: var(--orange-yellow-crayola);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cert-date {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.cert-description {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.verify-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  padding: 12px 24px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.verify-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+  .certificate-content {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Prevent text selection on certificate page */
+.cert-section * {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Allow text selection for certificate description */
+.cert-description {
+  -webkit-user-select: text;
+  user-select: text;
+  -webkit-touch-callout: default;
+} 
