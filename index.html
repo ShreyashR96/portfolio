@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-1267142082900699">
   <title>Shreyash Rakhunde Portfolio</title>
+  <meta name="description" content="Explore the portfolio of Shreyash Rakhunde, a B.Tech Computer Science student enthusiast in Cybersecurity and innovative web development projects.">
+  <meta name="keywords" content="Shreyash Rakhunde, portfolio, web development, cybersecurity, projects, B.Tech, Computer Science">
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
   <!--
     - custom css link
@@ -24,6 +26,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shreyash Rakhunde",
+      "url": "www.shreyashrakhunde.me",
+      "sameAs": [
+        "https://www.linkedin.com/in/shreyashrakhunde96/",
+        "https://github.com/ShreyashR96"
+      ],
+      "jobTitle": "B.Tech Computer Science Student",
+      "worksFor": {
+        "@type": "EducationalOrganization",
+        "name": "Dr.D.Y.Patil Pratishthan's College Of Engineering"
+      },
+      "description": "A passionate student specializing in Cybersecurity and innovative web development projects."
+    }
+    </script>
 </head>
 
 <body>
@@ -94,19 +114,6 @@
 
           </li>
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2004-08-27">Aug 27, 2004</time>
-            </div>
-
-          </li>
 
           <li class="contact-item">
 
@@ -301,14 +308,29 @@
           <h3 class="h3 certificates-title">Certificates</h3>
           
           <ul class="certificates-list">
-            <li class="certificate-item" onclick="window.location.href='certificate.html?id=cert-coep'">
+            
+            <li class="certificate-item" onclick="window.location.href='certificate.html?id=cert-genaiexchange'">
               <div class="certificate-icon">
-                <img src="./assets/images/COEP.png" alt="COEP" width="40">
+                <img src="./assets/images/hac2skilllogo.png" alt="Certificate" width="40">
               </div>
               <div class="certificate-content">
-                <h4>Basics of Programming Logic (BOPL)</h4>
-                <span class="certificate-date">July-Aug 2023</span>
-                <p>COEP | Mentor: Abhijeet Sir</p>
+                <h4>Gen AI Academy Completion Certificate</h4>
+                <span class="certificate-date">May 2025</span>
+                <p>Hack2skill</p>
+              </div>
+              <div class="certificate-hover">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+            </li>
+
+            <li class="certificate-item" onclick="window.location.href='certificate.html?id=cert-nptelcnp'">
+              <div class="certificate-icon">
+                <img src="./assets/images/nptel.png" alt="Certificate" width="40">
+              </div>
+              <div class="certificate-content">
+                <h4>NPTEL: Computer Networks & Internet Protocol</h4>
+                <span class="certificate-date">May 2025</span>
+                <p>NPTEL</p>
               </div>
               <div class="certificate-hover">
                 <ion-icon name="eye-outline"></ion-icon>
@@ -325,11 +347,11 @@
                 <p>NPTEL</p>
               </div>
               <div class="certificate-hover">
-
                 <ion-icon name="eye-outline"></ion-icon>
               </div>
             </li>
-            <li class="certificate-item">
+
+            <li class="certificate-item" onclick="window.location.href='certificate.html?id=cert-google'">
               <div class="certificate-icon">
                 <img src="./assets/images/google.png" alt="Certificate" width="40">
               </div>
@@ -339,10 +361,24 @@
                 <p>Google & Coursera</p>
               </div>
               <div class="certificate-hover">
-
                 <ion-icon name="eye-outline"></ion-icon>
               </div>
             </li>
+
+            <li class="certificate-item" onclick="window.location.href='certificate.html?id=cert-coep'">
+              <div class="certificate-icon">
+                <img src="./assets/images/COEP.png" alt="COEP" width="40">
+              </div>
+              <div class="certificate-content">
+                <h4>Basics of Programming Logic (BOPL)</h4>
+                <span class="certificate-date">July-Aug 2023</span>
+                <p>COEP | Mentor: Abhijeet Sir</p>
+              </div>
+              <div class="certificate-hover">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+            </li>
+
             <li class="certificate-item">
               <div class="certificate-icon">
                 <img src="./assets/images/mkcl.png" alt="Certificate" width="40">
@@ -352,11 +388,11 @@
                 <span class="certificate-date">May 2023</span>
                 <p>MKCL</p>
               </div>
-
               <div class="certificate-hover">
                 <ion-icon name="eye-outline"></ion-icon>
               </div>
             </li>
+
             <!-- Add  more certificate items with dummy data -->
           </ul>
         </section>
@@ -379,7 +415,7 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="./assets/images/avatar-1.png"  width="80" data-modal-img>
               </figure>
 
               <img src="./assets/images/icon-quote.svg" alt="quote icon">
@@ -387,7 +423,7 @@
 
             <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+              <h4 class="h3 modal-title" data-modal-title></h4>
               <div data-modal-text>
                 <p>
            
@@ -665,7 +701,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Other Projects</button>
+              <button data-filter-btn>Development</button>
             </li>
 
           </ul>
@@ -697,7 +733,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Other Projects</button>
+                <button data-select-item>Development</button>
               </li>
 
             </ul>
@@ -706,25 +742,33 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="Development" onclick="window.location.href='project.html?id=project-portfolio'">
               <a href="#">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/newtab_hackertheme.png" alt="finance" loading="lazy">
+                  <img src="./assets/images/project-1.jpg" alt="Portfolio" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Extension</h3>
-
-                <p class="project-category">Development</p>
-
+                <h3 class="project-title">Personal Portfolio</h3>
+                <p class="project-category">Web development</p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development" onclick="window.location.href='project.html?id=project-extension'">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/newtab_hackertheme.png" alt="Extension" loading="lazy">
+                </figure>
+                <h3 class="project-title">Extension</h3>
+                <p class="project-category">Development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development"onclick="window.location.href='project.html?id=project-readinghall'">
               <a href="#">
 
                 <figure class="project-img">
@@ -880,32 +924,87 @@
 
 
       <!--
-        - #Glimpse
+        - #Event Highlights
       -->
 
       <article class="glimpse" data-page="glimpse">
 
         <header>
-          <h2 class="h2 article-title">Glimpse</h2>
+          <h2 class="h2 article-title">Event Highlights</h2>
         </header>
 
         <section class="glimpse-posts">
           <ul class="glimpse-posts-list">
-          <li class="glimpse-post-item">
-              <a href="https://www.google.com">
+
+            <li class="glimpse-post-item">
+              <a href="#">
                 <figure class="glimpse-banner-box">
-                  <img src="./assets/images/devfest_pune_2023.png" alt="Devfest Pune 2023" loading="lazy">
+                  <img src="./assets/images/Pune-BootcampGDGSol.png" alt="GDG-Solution Challenge Pune Bootcamp" loading="lazy">
+                </figure>
+                <div class="glimpse-content">
+                  <div class="glimpse-meta">
+                    <p class="glimpse-category">workshop</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-03-19">March 19, 2025</time>
+                  </div>
+                  <h3 class="h3 glimpse-item-title">GDG-Solution Challenge Pune Bootcamp</h3>
+                  <p class="glimpse-text">
+                    The GDG Solution Challenge Bootcamp Pune 2025 was an intensive, invite-only program designed to empower student developers to create impactful solutions aligned with the United Nations Sustainable Development Goals (SDGs) using Google technologies.                </div>
+              </a>
+            </li>
+
+            <li class="glimpse-post-item">
+              <a href="#">
+                <figure class="glimpse-banner-box">
+                  <img src="./assets/images/cybersec_conference.png" alt="IdentityShield Summit' 25" loading="lazy">
+                </figure>
+                <div class="glimpse-content">
+                  <div class="glimpse-meta">
+                    <p class="glimpse-category">Conference</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-01-11">Jan 11 & 12, 2025</time>
+                  </div>
+                  <h3 class="h3 glimpse-item-title">IdentityShield Summit' 25</h3>
+                  <p class="glimpse-text">
+                    Organized by miniOrange at Dhruv Global School, Pune, this summit gathered over 1,500 attendees for 60+ sessions on cybersecurity, featuring keynotes from industry leaders and an Innovation Sandbox showcasing groundbreaking projects.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="glimpse-post-item">
+              <a href="#">
+                <figure class="glimpse-banner-box">
+                  <img src="./assets/images/devfest_mumbai_2024.png" alt="GDG Devfest Mumbai 2024" loading="lazy">
                 </figure>
                 <div class="glimpse-content">
                   <div class="glimpse-meta">
                     <p class="glimpse-category">Event</p>
                     <span class="dot"></span>
-                    <time datetime="2023-12-21">21 Dec 2023</time>
+                    <time datetime="2024-12-14">Dec 14, 2024</time>
                   </div>
-                  <h3 class="h3 glimpse-item-title">GDG Devfest Pune 2023</h3>
+                  <h3 class="h3 glimpse-item-title">GDG Devfest Mumbai 2024</h3>
                   <p class="glimpse-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Held at Bombay Exhibition Centre, this event offered a diverse agenda including AI sessions, workshops on Google Cloud and Web3, and unique activities like the 'Fish Tank' pitch parody and LinkedIn profile roasting.
                   </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="glimpse-post-item">
+              <a href="https://www.linkedin.com/posts/shreyashrakhunde_devfestpune2024-gdgpune-wtm-activity-7270336434446761984-_h0J?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <figure class="glimpse-banner-box">
+                  <img src="./assets/images/devfest_pune_2024.png" alt="Devfest Pune 2024" loading="lazy">
+                </figure>
+                <div class="glimpse-content">
+                  <div class="glimpse-meta">
+                    <p class="glimpse-category">Event</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-11-30">Nov 30, 2024</time>
+                  </div>
+                  <h3 class="h3 glimpse-item-title">GDG Devfest Pune 2024</h3>
+                  <p class="glimpse-text">
+                    Hosted at The Westin Pune Koregaon Park, this edition featured over 40 industry experts discussing Generative AI, Responsible AI, and ethical tech practices, along with a career fair and community lounge.                  </p>
                 </div>
               </a>
             </li>
@@ -923,87 +1022,31 @@
                   </div>
                   <h3 class="h3 glimpse-item-title">GDSC WOW Pune 2024</h3>
                   <p class="glimpse-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    A collaborative event uniting 30+ Google Developer Student Clubs across Pune, featuring hands-on activities, lightning talks, and networking opportunities to explore a range of technologies.
                   </p>
                 </div>
               </a>
             </li>
-        
+
             <li class="glimpse-post-item">
-              <a href="#">
+              <a href="https://www.google.com">
                 <figure class="glimpse-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="GDGC INFO SESSION (DYPCOE, Akurdi)" loading="lazy">
+                  <img src="./assets/images/devfest_pune_2023.png" alt="Devfest Pune 2023" loading="lazy">
                 </figure>
                 <div class="glimpse-content">
                   <div class="glimpse-meta">
                     <p class="glimpse-category">Event</p>
                     <span class="dot"></span>
-                    <time datetime="2024-08-30">Sept 30, 2024</time>
+                    <time datetime="2023-12-21">21 Dec 2023</time>
                   </div>
-                  <h3 class="h3 glimpse-item-title">GDGC INFO SESSION (DYPCOE, Akurdi)</h3>
+                  <h3 class="h3 glimpse-item-title">GDG Devfest Pune 2023</h3>
                   <p class="glimpse-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    Held at JW Marriott Hotel Pune, this event brought together over 1,000 tech enthusiasts for a day of sessions and workshops on AI, Android, and Web technologies, fostering community learning and networking.
                   </p>
                 </div>
               </a>
             </li>
-        
-            <li class="glimpse-post-item">
-              <a href="https://www.linkedin.com/posts/shreyashrakhunde_devfestpune2024-gdgpune-wtm-activity-7270336434446761984-_h0J?utm_source=share&utm_medium=member_desktop" target="_blank">
-                <figure class="glimpse-banner-box">
-                  <img src="./assets/images/devfest_pune_2024.png" alt="Devfest Pune 2024" loading="lazy">
-                </figure>
-                <div class="glimpse-content">
-                  <div class="glimpse-meta">
-                    <p class="glimpse-category">Event</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-11-30">Nov 30, 2024</time>
-                  </div>
-                  <h3 class="h3 glimpse-item-title">GDG Devfest Pune 2024</h3>
-                  <p class="glimpse-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-                </div>
-              </a>
-            </li>
-        
-            <li class="glimpse-post-item">
-              <a href="#">
-                <figure class="glimpse-banner-box">
-                  <img src="./assets/images/devfest_mumbai_2024.png" alt="GDG Devfest Mumbai 2024" loading="lazy">
-                </figure>
-                <div class="glimpse-content">
-                  <div class="glimpse-meta">
-                    <p class="glimpse-category">Event</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-12-14">Dec 14, 2024</time>
-                  </div>
-                  <h3 class="h3 glimpse-item-title">GDG Devfest Mumbai 2024</h3>
-                  <p class="glimpse-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </a>
-            </li>
-        
-            <li class="glimpse-post-item">
-              <a href="#">
-                <figure class="glimpse-banner-box">
-                  <img src="./assets/images/cybersec_conference.png" alt="IdentityShield Summit' 25" loading="lazy">
-                </figure>
-                <div class="glimpse-content">
-                  <div class="glimpse-meta">
-                    <p class="glimpse-category">Conference</p>
-                    <span class="dot"></span>
-                    <time datetime="2025-01-11">Jan 11 & 12, 2025</time>
-                  </div>
-                  <h3 class="h3 glimpse-item-title">IdentityShield Summit' 25</h3>
-                  <p class="glimpse-text">
-                    Soon..
-                  </p>
-                </div>
-              </a>
-            </li>
+
           </ul>
         </section>
 
